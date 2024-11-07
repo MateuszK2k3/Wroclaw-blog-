@@ -1,0 +1,56 @@
+/* Kontener dla galerii */
+.gallery-container {
+    display: flex; /* wyśrodkowanie zawartości */
+    justify-content: center; /* Wyśrodkowanie elementów w poziomie */
+    align-items: center; /* Wyśrodkowanie elementów w pionie */
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Kontener dla elementów galerii */
+.gallery {
+    display: grid; /* Grid layout do rozmieszczenia elementów */
+    /* Definiuje kolumny siatki, dostosowując się automatycznie do dostępnej szerokości */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Odstęp między elementami siatki na 10px */
+    width: 100%;
+    margin: 0 auto; /* Wyśrodkowanie kontenera galerii */
+}
+
+/* Style dla obrazków w galerii */
+.gallery img {
+    width: 100%;
+    height: auto; /* automatyczna wysokość obrazków */
+    display: block; /* Wyświetlanie obrazków jako blokowe */
+    border: 2px solid #a2a2a2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* cień wokół obrazków */
+}
+
+/* Efekt po najechaniu kursorem dla obrazków w galerii */
+.gallery img:hover {
+    cursor: pointer; /* wskaźnik ręki przy najechaniu */
+    border: 2px solid #4f4f4f;
+}
+
+/* Style dla ekranów o szerokości do 512px,
+   aby obrazki po zmniejszeniu ekranu nie były takie duże  */
+@media screen and (max-width: 512px) {
+    .gallery {
+        /* Kolumny siatki z mniejszymi obrazkami */
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+/* Style dla ekranów o szerokości do 400px
+   aby napisy w zdjęciu się zmieściły*/
+@media screen and (max-width: 400px){
+    /* Stylowanie nagłówka witryny */
+    .site-heading h1 {
+        font-size: 18px;
+    }
+    /* Stylowanie podtytułu */
+    .subheading {
+        font-size: 10px;
+    }
+}

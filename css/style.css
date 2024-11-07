@@ -1,0 +1,406 @@
+/* Resetowanie marginesów i odstępów dla całego dokumentu */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja dla menu nawigacyjnego */
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Równomierne rozmieszczenie elementów menu */
+    align-items: center; /* Wyrównanie elementów w pionie */
+}
+
+/* Stylizacja dla listy nawigacyjnej */
+.nav {
+    list-style: none; /* Usunięcie stylu listy */
+    padding: 0;
+    margin: 0;
+}
+
+/* Stylizacja dla elementów listy nawigacyjnej */
+.nav li {
+    display: inline; /* Ustawienie elementów w jednej linii */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Stylizacja dla linków w nawigacji */
+.nav a {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: #333;
+}
+
+/* Stylizacja dla linków w nawigacji podczas najechania kursorem */
+.nav li :hover {
+    margin: -5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #796e6e;
+}
+
+/* Stylizacja dla głównej sekcji zawartości */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Stylizacja dla nawigacji */
+nav {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    padding: 10px 0;
+}
+
+/* Styl dla elementu .navbar-header */
+.navbar-header {
+    display: flex;
+    align-items: center;/* Wyrównanie elementów do środka wzdłuż osi krzyżowej */
+    justify-content: space-between; /* Rozłożenie elementów równomiernie po osi głównej */
+}
+
+#weather {
+    border-left: 1px solid #c4c3c3;
+    padding: 5px;
+    margin-left: 20px; /* Możesz dostosować tę wartość w zależności od potrzeb */
+}
+
+/* Stylizacja dla linku w nagłówku nawigacji */
+.navbar-header a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: #333;
+}
+
+
+
+/* Stylizacja dla głównego nagłówka strony */
+.masthead {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 5px; /* Odstępy między literami */
+    position: relative; /* Ustawienie elementu względem jego normalnej pozycji */
+    background-color: #343a40;
+    background-size: cover; /* Skalowanie obrazu tła, aby pokrył cały element */
+    padding: 0 0;
+    color: white;
+    text-align: center; /*wyśrodkowanie tekstu*/
+}
+
+/* Stylizacja dla sekcji nagłówka */
+.site-heading {
+    width: 100%;
+    height: auto;
+    position: relative; /* Ustawienie elementu względem jego normalnej pozycji */
+}
+
+/* Stylizacja dla tytułu w nagłówku */
+.site-heading h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+/* Stylizacja dla obrazu w nagłówku */
+.site-heading img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stylizacja dla wycentrowania tekstu w nagłówku */
+.centered {
+    position: absolute; /* Ustawienie elementu względem .container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Wycentrowanie w poziomie i pionie */
+}
+
+
+/* Stylizacja dla podtytułu w nagłówku */
+.subheading {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 300; /* Waga czcionki */
+}
+
+
+/* Stylizacja dla głównej sekcji */
+.main {
+    padding: 60px 0;
+}
+
+/* Stylizacja dla podglądu posta */
+.post-preview {
+    font-family: 'Georgia', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stylizacja dla tytułu posta */
+.post-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Stylizacja dla podtytułu posta */
+.post-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Stylizacja dla linii */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 0 0;
+}
+
+/* Stylizacja dla stopki */
+footer {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #796e6e;
+    font-style: italic;
+}
+
+/*ustawienie dlugosci pola tekstowego i typu input */
+input[type=text],
+input[type=number]{
+    width: 200px;
+}
+
+.in {
+    width: 100%;
+}
+
+.kol2 {
+    width: 65%;
+}
+
+.kom textarea {
+    margin-top: 10px;
+    resize: none; /*brak molowości zmieniania rozmiaru*/
+    width: 100%;
+    height: calc(100% - 30px); /*wysokości 100% minus 30 aby by lo równe z pólami formularza*/
+}
+
+.error {
+    font-size: 13px;
+    color: #f51616;
+}
+
+/*styl input podczas wpisywania*/
+input::placeholder {
+    font-family: 'Georgia', serif;
+    color: #f51616; /* Kolor placeholdera */
+}
+
+textarea {
+    font-family: 'Georgia', serif;
+}
+
+/*styl textarea podczas wpisywania*/
+textarea::placeholder {
+    font-family: 'Georgia', serif;
+    color: #f51616;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*styl komentarza*/
+.kom {
+    clear: both; /*usuniecie poprzednich ustawie elementow*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4f4f4f;
+    border-radius: 20px;
+}
+
+/* Styl dla klasy .inf1 */
+.inf1 {
+    /* Ustawienie pozycji względem otaczającego elementu */
+    position: relative;
+    /* Przesunięcie w prawo o 10 pikseli */
+    right: 10px;
+    /* Szerokość 150 pikseli */
+    width: 150px;
+    /* Wyśrodkowanie tekstu wewnątrz elementu */
+    text-align: center;
+}
+
+/* Styl dla klasy .inf2 */
+.inf2 {
+    /* Szerokość 150 pikseli */
+    width: 150px;
+}
+
+/* Styl dla klasy .inf3 */
+.inf3 {
+    /* Elastyczne rozszerzanie w stosunku do innych elementów */
+    flex-grow: 1;
+    /* Szerokość 70% */
+    width: 70%;
+    /* Ustawienie pozycji względem otaczającego elementu */
+    position: relative;
+}
+
+/* Styl dla klasy .kom-contents */
+.kom-contents {
+    /* Margines na górze 10 pikseli */
+    margin-top: 10px;
+    /* Wypełnienie 20 pikseli */
+    padding: 20px;
+    /* Szerokość 100% */
+    width: calc(100% - 40px);
+    /* Zaokrąglenie narożników na 10 pikseli */
+    border-radius: 10px;
+    /* Dopuszczalne zawijanie wierszy */
+    word-wrap: break-word;
+    /* Kolor tła */
+    background-color: #ffffff;
+}
+
+/* Styl dla wszystkich przycisków */
+button {
+    font-family: 'Georgia', serif;
+    background-color: #d7d7d7;
+    border: 2px solid #4f4f4f;
+    border-radius: 10px; /* Zaokrąglenie narożników na 10 pikseli */
+    /* Rozmiar czcionki - 100% domyślnego rozmiaru */
+    font-size: 100%;
+    /* Wysokość 40 pikseli */
+    height: 40px;
+    /* Kursor wskazujący na możliwość kliknięcia */
+    cursor: pointer;
+}
+
+/* Styl dla przycisków w momencie najechania */
+button:hover {
+    /* Zmiana koloru tła po najechaniu */
+    background-color: #ababab;
+}
+
+/* Styl dla przycisku edycji */
+.edit-button {
+    /* Wyświetlanie jako blok */
+    display: block;
+    /* Wyrównanie do prawej strony */
+    float: right;
+    /* Margines na górze 5 pikseli */
+    margin-top: 5px;
+    /* Wysokość 30 pikseli */
+    height: 30px;
+}
+
+/* Styl dla kontenera mediów */
+.media-container {
+    /* Wyświetlanie elementów w układzie flexbox */
+    display: flex;
+    /* Dopuszczalne zawijanie wierszy */
+    flex-wrap: wrap;
+    /* Wyśrodkowanie elementów w poziomie */
+    justify-content: center;
+    /* Odległość między elementami */
+    gap: 20px;
+    /* Margines na dole 20 pikseli */
+    margin-bottom: 20px;
+}
+
+/* Styl dla kontenera przycisków */
+.button-container {
+    /* Wyświetlanie elementów w układzie flexbox */
+    display: flex;
+    /* Wyśrodkowanie elementów w poziomie */
+    justify-content: center;
+    /* Odległość między elementami */
+    gap: 10px;
+}
+
+
+/*============== zapytania o media ===================*/
+
+/* Tresć opini spada na doł */
+@media (max-width: 600px) {
+    .kom {
+        flex-direction: column; /* Ustawienie elementów w kolumnie */
+        align-items: center; /* Wyśrodkowanie elementów */
+    }
+
+    .inf1, .inf2 {
+        width: 100%; /* Ustawienie szerokości na 100% */
+        text-align: center; /* Wyśrodkowanie tekstu */
+    }
+
+    .inf3 {
+        width: 100%; /* Ustawienie szerokości na 100% */
+    }
+
+    .kom-contents {
+        width: calc(100% - 40px); /* Ustawienie szerokości na 100% */
+        margin: 0; /* Usunięcie marginesu */
+    }
+}
+
+/* Stylizacja dla mniejszych rozdzielczości ekranu */
+@media screen and (max-width: 765px) {
+    .menu {
+        display: block; /* Ustawienie menu jako blok */
+    }
+    .nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row; /* Kierunek wiersza */
+        justify-content: space-between; /* Równomierne rozmieszczenie elementów z odstępami między nimi */
+        flex-wrap: wrap; /* Zawijanie elementów */
+    }
+    .nav li {
+        text-align: center;
+        margin: 5px;
+        display: block; /* Ustawienie elementów jako bloki */
+        width: 150px;
+    }
+    .site-heading h1 {
+        font-size: 30px;
+    }
+    .subheading {
+        font-size: 14px;
+    }
+}
+
+/* usatweienie nawigacji */
+@media screen and (min-width: 599px) and (max-width: 765px) {
+    .nav li {
+        width: 200px;
+    }
+}
+
+/* Stylizacja dla średnich urządzeń */
+@media screen and (min-width: 551px) and (max-width: 1000px) {
+    .site-heading h1 {
+        font-size: 35px;
+    }
+    .subheading {
+        font-size: 18px;
+    }
+}
+
+/*zapytanie o media dla ekranów o szerokości maksymalnej 1000px
+  ustawienei zdjęć na srodek w atraction.html*/
+@media screen and (max-width: 1000px) {
+    .article {
+        clear: both;
+        width: 80%;
+        margin: 20px auto 10px auto;
+    }
+}
+

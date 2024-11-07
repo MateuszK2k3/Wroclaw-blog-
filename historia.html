@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"> <!-- Deklaracja kodowania znaków -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ustawienie skalowania na urządzeniach mobilnych -->
+    <title>Wrocław</title> <!-- Tytuł strony -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Dołączenie biblioteki jQuery -->
+    <script src="js/lightbox.js"></script> <!-- Dołączenie skryptu do obsługi lightboxa -->
+    <script src="js/weather.js"></script> <!-- Dołączenie skryptu do pobierania pogody -->
+
+    <link rel="stylesheet" href="css/style.css"> <!-- Dołączenie arkusza stylów CSS -->
+    <link rel="stylesheet" href="css/gallery.css"> <!-- Dołączenie arkusza stylów CSS dla galerii -->
+    <link rel="stylesheet" href="css/lightbox.css"><!-- Dołączenie arkusza stylów CSS dla lightbox -->
+</head>
+<body>
+<!-- Nawigacja strony -->
+<nav>
+    <div class="menu">
+        <!-- Nagłówek nawigacji -->
+        <div class="navbar-header">
+            <a class="navbar-brand">Wrocław</a> <!-- Tytuł strony w nawigacji -->
+            <div id="weather">&nbsp;</div> <!-- Wyświetlanie aktualnej pogody -->
+        </div>
+        <!-- Lista elementów nawigacyjnych -->
+        <ul class="nav">
+            <li><a href="index.html">Strona główna</a></li> <!-- Link do strony głównej -->
+            <li><a href="atraction.html">Atrakcje</a></li> <!-- Link do strony z atrakcjami -->
+            <li><a href="historia.html">Historia</a></li> <!-- Link do strony z historią -->
+            <li><a href="mapa.html">Krasnale Wrocławskie</a></li> <!-- Link do strony z mapą krasnali -->
+        </ul>
+    </div>
+</nav>
+<!-- Główny nagłówek strony -->
+<header class="masthead">
+    <div class="site-heading">
+        <!-- Wycentrowany nagłówek strony -->
+        <div class="centered" style="text-shadow: black 0.1em 0.1em 0.2em">
+            <h1>Historia Wrocławia</h1> <!-- Główny tytuł strony -->
+            <span class="subheading">Od Przeszłości do Współczesności</span> <!-- Podtytuł -->
+        </div>
+        <img src="images/baner_historia.jpg" alt="baner_histria"> <!-- Obraz w nagłówku -->
+    </div>
+</header>
+<!-- Główna sekcja zawartości -->
+<section class="container">
+    <!-- Pierwszy post -->
+    <div class="post-preview">
+        <h2 class="post-title">Wczesne Średniowiecze i Powstanie Miasta</h2> <!-- Tytuł pierwszego posta -->
+        <!-- Treść pierwszego posta -->
+        Historia Wrocławia rozpoczyna się w X wieku, kiedy to na Ostrowie
+        Tumskim powstała osada słowiańska. W 1000 roku, podczas zjazdu gnieźnieńskiego,
+        Bolesław I Chrobry założył we Wrocławiu biskupstwo, co znacząco przyczyniło
+        się do rozwoju miasta. Pierwsza katedra na Ostrowie Tumskim stała się centrum
+        religijnym i kulturalnym regionu.
+    </div>
+    <hr>
+    <!-- Drugi post -->
+    <div class="post-preview">
+        <h2 class="post-title">Średniowiecze: Rozkwit i Potęga</h2> <!-- Tytuł drugiego posta -->
+        <!-- Treść drugiego posta -->
+        W XIII wieku Wrocław otrzymał prawa miejskie na wzór Magdeburga,
+        co przyspieszyło jego rozwój gospodarczy i urbanistyczny.
+        Miasto stało się ważnym ośrodkiem handlowym dzięki swojemu
+        położeniu na skrzyżowaniu szlaków handlowych. W XIV wieku Wrocław
+        wszedł w skład Korony Czeskiej, co przyniosło okres stabilizacji i dalszego rozwoju.
+    </div>
+    <hr>
+    <!-- Trzeci post -->
+    <div class="post-preview">
+        <h2 class="post-title">Czasy Habsburgów i Wojny</h2> <!-- Tytuł trzeciego posta -->
+        <!-- Treść trzeciego posta -->
+        W XVI wieku, po wojnie śląskiej, Wrocław wraz z całym Śląskiem przeszedł
+        pod panowanie Habsburgów. Miasto stało się jednym z centrów reformacji
+        protestanckiej, co doprowadziło do napięć religijnych. Wojna trzydziestoletnia
+        (1618-1648) przyniosła znaczne zniszczenia, ale po jej zakończeniu
+        Wrocław szybko się odbudował.
+    </div>
+    <hr>
+    <!-- Czwarty post -->
+    <div class="post-preview">
+        <h2 class="post-title">Prusy i Industrializacja</h2> <!-- Tytuł czwartego posta -->
+        <!-- Treść czwartego posta -->
+        W 1741 roku, po I wojnie śląskiej, Wrocław został przyłączony do
+        Królestwa Prus. Pod panowaniem pruskim miasto przeżywało dynamiczny
+        rozwój gospodarczy i urbanistyczny. XIX wiek przyniósł industrializację,
+        rozwój kolei i nowoczesnej infrastruktury miejskiej. Wrocław stał się jednym
+        z najważniejszych ośrodków przemysłowych i kulturalnych w regionie.
+    </div>
+    <hr>
+    <!-- Piąty post -->
+    <div class="post-preview">
+        <h2 class="post-title">XX wiek: Wojny i Odbudowa</h2> <!-- Tytuł piątego posta -->
+        <!-- Treść piątego posta -->
+        W czasie II wojny światowej Wrocław, znany wtedy jako Breslau,
+        był twierdzą niemiecką i doznał ogromnych zniszczeń podczas
+        oblężenia przez wojska radzieckie w 1945 roku. Po wojnie, na
+        mocy postanowień konferencji poczdamskiej, miasto zostało
+        przekazane Polsce, a ludność niemiecka została wysiedlona.
+        Wrocław zaczął się odbudowywać z ruin, a na jego tereny przybywali
+        przesiedleńcy z Kresów Wschodnich i innych części Polski.
+    </div>
+    <hr>
+    <!-- Szósty post -->
+    <div class="post-preview">
+        <h2 class="post-title">Współczesność: Rozwój i Przemiany</h2> <!-- Tytuł szóstego posta -->
+        <!-- Treść szóstego posta -->
+        Po upadku komunizmu w 1989 roku Wrocław rozpoczął okres
+        dynamicznego rozwoju gospodarczego i społecznego. Stał się
+        ważnym ośrodkiem akademickim, kulturalnym i biznesowym.
+        W 2016 roku miasto było Europejską Stolicą Kultury, a w 2017
+        roku gospodarzem The World Games. Inwestycje infrastrukturalne,
+        rozwój technologiczny i działalność kulturalna uczyniły Wrocław jednym z
+        najprężniej rozwijających się miast w Polsce.
+    </div>
+    <hr>
+    <!-- Siódmy post -->
+    <div class="post-preview">
+        <h2 class="post-title">Podsumowanie</h2> <!-- Tytuł siódmego posta -->
+        <!-- Treść siódmego posta -->
+        Wrocław to miasto o niezwykłej historii,
+        które przez wieki przechodziło przez różne fazy rozwoju i
+        przemian. Jego burzliwa przeszłość, pełna wojen,
+        zmian politycznych i gospodarczych, ukształtowała jego unikalny
+        charakter i tożsamość. Dziś Wrocław jest symbolem odrodzenia i
+        dynamicznego rozwoju, przyciągającym turystów, studentów i przedsiębiorców
+        z całego świata. To miejsce, gdzie przeszłość spotyka się z nowoczesnością,
+        tworząc unikalną mozaikę kulturową i społeczną.
+    </div>
+    <hr>
+    <!-- Galeria zjęć -->
+    <div class="post-preview">
+        <!-- Tytuł galerii zdjęć -->
+        <h2 class="post-title">Galeria historycznych zdjęć</h2>
+        <!-- Treść galerii zdjęć -->
+        <div class="gallery-container">
+            <div class="gallery">
+                <!-- Zdjęcia w galerii z podpisami -->
+                <a href="images/stare/stare1.jpg" data-lightbox="gallery" data-title="Przystań parowców Wilhelmshafen przy grobli Szczytnicko - Bartoszowickiej">
+                    <img src="images/stare/stare1.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare2.jpg" data-lightbox="gallery" data-title="Stragany we wschodniej części Rynku.">
+                    <img src="images/stare/stare2.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare3.jpg" data-lightbox="gallery" data-title="Ulica Uniwersytecka we Wrocławiu.">
+                    <img src="images/stare/stare3.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare4.jpg" data-lightbox="gallery" data-title="Budynki przy ul. Białoskórniczej.">
+                    <img src="images/stare/stare4.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare5.jpg" data-lightbox="gallery" data-title="Mosty Warszawskie, dawny most Hinderburga.">
+                    <img src="images/stare/stare5.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare6.jpg" data-lightbox="gallery" data-title="Hala Ludowa i Pawilon Czterech Kopuł.">
+                    <img src="images/stare/stare6.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare7.jpg" data-lightbox="gallery" data-title="Wybrzeże Wyspiańskiego widoczne od strony jazu Szczytniki.">
+                    <img src="images/stare/stare7.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare8.jpg" data-lightbox="gallery" data-title="Rynek widziany z wieży bazyliki św. Elżbiety Węgierskiej.">
+                    <img src="images/stare/stare8.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare9.jpg" data-lightbox="gallery" data-title="Cyrk Buscha przy pl. Rozjezdnym na terenie Przedmieścia Świdnickiego.">
+                    <img src="images/stare/stare9.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare10.jpg" data-lightbox="gallery" data-title="Nieistniejąca już Hala Targowa II przy ul. Kolejowej na Przedmieściu Świdnickim.">
+                    <img src="images/stare/stare10.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare11.jpg" data-lightbox="gallery" data-title="Widok ze Wzgórza Partyzantów na m.in. ul. ks. Piotra Skargi.">
+                    <img src="images/stare/stare11.jpg" alt="Zdjęcie 1">
+                </a>
+                <a href="images/stare/stare12.jpg" data-lightbox="gallery" data-title='Hotel "Monopol" przy ul. Świdnickiej.'>
+                    <img src="images/stare/stare12.jpg" alt="Zdjęcie 1">
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</section>
+<!-- Stopka strony -->
+<footer class="container">
+    ©MK 2024
+</footer>
+</body>
+</html>

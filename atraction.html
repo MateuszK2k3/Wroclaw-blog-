@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrocław</title>
+    <!-- Link do głównego arkusza stylów -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link do arkusza stylów dla slidera -->
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- skrypty JS -->
+    <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/weather.js"></script>
+</head>
+<body>
+<!-- Nawigacja strony -->
+<nav>
+    <div class="menu">
+        <!-- Nagłówek nawigacji -->
+        <div class="navbar-header">
+            <!-- Tytuł strony -->
+            <a class="navbar-brand">Wrocław</a>
+            <!-- Wyświetlanie aktualnej pogody -->
+            <div id="weather">&nbsp;</div>
+        </div>
+        <!-- Lista elementów nawigacyjnych -->
+        <ul class="nav">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="atraction.html">Atrakcje</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="mapa.html">Krasnale Wrocławskie</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Główny nagłówek strony -->
+<header class="masthead">
+    <div class="site-heading">
+        <!-- Wycentrowany nagłówek strony -->
+        <div class="centered" style="text-shadow: black 0.1em 0.1em 0.2em">
+            <h1>Wrocław</h1> <!-- Główny tytuł strony -->
+            <span class="subheading">Najciekawsze atrakcje</span> <!-- Podtytuł -->
+        </div>
+        <img src="images/baner_atrakcje.jpg" alt="baner_atrakcje"> <!-- Obraz w nagłówku -->
+    </div>
+</header>
+<!-- Główna sekcja zawartości -->
+<section class="container">
+    <!-- Pierwszy post -->
+    <div class="post-preview">
+        <h2 class="post-title">Stare Miasto, czyli serce całego Wrocławia</h2>
+        <!-- Slider ze zdjęciami -->
+        <div class="slideshow-container">
+            <!-- Zdjęcia -->
+            <div class="mySlides1 fade">
+                <img src="images/rynek/rynek1.jpg" style="width:100%" alt="rynek1">
+            </div>
+            <div class="mySlides1 fade">
+                <img src="images/rynek/rynek2.jpg" style="width:100%" alt="rynek2">
+            </div>
+            <div class="mySlides1 fade">
+                <img src="images/rynek/rynek3.jpg" style="width:100%" alt="rynek3">
+            </div>
+            <div class="mySlides1 fade">
+                <img src="images/rynek/rynek4.jpg" style="width:100%" alt="rynek4">
+            </div>
+            <div class="mySlides1 fade">
+                <img src="images/rynek/rynek5.jpg" style="width:100%" alt="rynek5">
+            </div>
+            <!-- Przyciski do przewijania slidera -->
+            <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+            <a class="next" onclick="plusSlides(1, 1)">❯</a>
+        </div>
+        <br>
+        <!-- Tekst artykułu -->
+        <div class="article">
+            Stare Miasto to serce Wrocławia, gdzie znajduje się wiele zabytków i atrakcji turystycznych.
+            Będąc tutaj nie możesz go ominąć! Możesz zacząć swoją wizytę na wrocławskim Rynku,
+            jednym z największych w Europie, gdzie znajduje się ratusz – jest na liście historycznych
+            budynków w Polsce, które zachowały się w tak dobrym stanie.
+            <br><br>
+            Obok Ratusza znajduje się kamienica pod Złotym Słońcem, której fasada jest ozdobiona
+            licznymi detalem architektonicznymi. W nocy w oknach można zobaczyć przechodzących się
+            wirtualnych jegomości, co naprawdę robi wrażenie!
+            <br><br>
+            Warto też zobaczyć kolorowe kamienice, zgubić się w ciasnych uliczkach,
+            które kryją w sobie zabytkowe ozdoby, ogromne wrota i pomysłowe knajpy.
+            Na placu na pewno znajdziesz również fontannę Zdrój zbudowaną ze szkła i granitu,
+            przy której turyści często robią sobie zdjęcia.
+            <br><br>
+            Jednym z ważnych punktów na tej trasie są Jatki. To miejsce,
+            gdzie kiedyś znajdowały się rzeźnie i sklepy mięsne. To dlatego w centrum stoi sławny
+            Pomnik Zwierząt Rzeźnych. Koniecznie musisz zapoznać się z tą atrakcją!
+        </div>
+        <br>
+        <!-- kontener do wyświetlania przycisku usuwania komentarzy -->
+        <div id="deleteButton1" style="clear: both"></div>
+        <!-- kontener do wyświetlania komentarzy -->
+        <div id="kom-container1"></div>
+        <!-- przycisk do pokazania formuarza -->
+        <div id="form1">
+            <button type="button" id="formButton1" onclick="showForm(1)">Wstaw opinię</button>
+        </div>
+    </div>
+    <hr><!-- linia oddzielająca artykuły -->
+    <!-- Drugi post -->
+    <div class="post-preview">
+        <h2 class="post-title">Panorama Racławicka – największy zabytek w Polsce</h2>
+        <!-- Slider ze zdjęciami -->
+        <div class="slideshow-container">
+            <!-- Zdjęcia -->
+            <div class="mySlides2 fade">
+                <img src="images/panoramaRac/panoramaRac1.jpg" style="width:100%" alt="panoramaRac1">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="images/panoramaRac/panoramaRac2.jpg" style="width:100%" alt="panoramaRac2">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="images/panoramaRac/panoramaRac3.jpg" style="width:100%" alt="panoramaRac3">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="images/panoramaRac/panoramaRac4.jpg" style="width:100%" alt="panoramaRac4">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="/images/panoramaRac/panoramaRac5.jpg" style="width:100%" alt="/panoramaRac5">
+            </div>
+            <!-- Przyciski do przewijania slidera -->
+            <a class="prev" onclick="plusSlides(-1,2)">❮</a>
+            <a class="next" onclick="plusSlides(1,2)">❯</a>
+        </div>
+        <br>
+        <!-- Tekst artykułu -->
+        <div class="article">
+            Panorama Racławicka to jedno z najważniejszych dzieł malarskich w Polsce,
+            będące zarówno arcydziełem sztuki, jak i wyjątkowym dokumentem historycznym.
+            Znajduje się we Wrocławiu, w specjalnie zaprojektowanym rotundzie,
+            gdzie od lat przyciąga tłumy turystów z kraju i zagranicy.
+            <br><br>
+            Pomysł stworzenia Panoramy Racławickiej zrodził się w 1893 roku,
+            z inicjatywy lwowskiego malarza Jana Styki. Jego celem było upamiętnienie setnej
+            rocznicy insurekcji kościuszkowskiej i bitwy pod Racławicami, która miała miejsce
+            4 kwietnia 1794 roku. Do współpracy zaprosił wybitnego malarza batalistycznego
+            Wojciecha Kossaka. Prace nad obrazem trwały od sierpnia 1893 roku do maja 1894 roku
+            i były prowadzone w specjalnie przystosowanej hali malarskiej we Lwowie.
+            <br><br>
+            Panorama Racławicka to ogromne malowidło o wymiarach 15 x 114 metrów,
+            które prezentuje panoramiczny widok bitwy pod Racławicami.
+            Dzieło jest wyjątkowe nie tylko ze względu na swoje imponujące rozmiary,
+            ale także na sposób przedstawienia wydarzeń – widz, stojąc w centrum rotundy,
+            ma wrażenie, jakby przeniósł się w czasie i przestrzeni na pole bitwy.
+            Efekt ten potęguje zastosowanie specjalnych technik malarskich oraz umieszczenie
+            przed obrazem rekwizytów, takich jak ziemia, krzaki czy armaty, które łączą się z
+            malowidłem, tworząc wrażenie trójwymiarowości.
+            <br><br>
+            Dziś Panorama Racławicka jest jedną z najważniejszych atrakcji turystycznych Wrocławia.
+            Wizyta w rotundzie to nie tylko okazja do podziwiania monumentalnego malowidła,
+            ale także możliwość zapoznania się z kontekstem historycznym i artystycznym dzieła
+            dzięki nowoczesnym prezentacjom multimedialnym i przewodnikom.
+            <br><br>
+            Panorama Racławicka we Wrocławiu to miejsce,
+            które każdy Polak powinien odwiedzić przynajmniej raz w życiu.
+            To wyjątkowe połączenie sztuki i historii, które porusza, inspiruje i
+            uczy o ważnych momentach w dziejach naszego narodu.
+        </div>
+        <br>
+        <!-- kontener do wyświetlania przycisku usuwania komentarzy -->
+        <div id="deleteButton2" style="clear: both"></div>
+        <!-- kontener do wyświetlania komentarzy -->
+        <div id="kom-container2" class="container2"></div>
+        <!-- przycisk do pokazania formuarza -->
+        <div id="form2">
+            <button type="button" id="formButton2" onclick="showForm(2)">Wstaw opinię</button>
+        </div>
+    </div>
+    <hr><!-- linia oddzielająca artykuły -->
+    <!-- Trzeci post -->
+    <div class="post-preview">
+        <h2 class="post-title">Ostrów Tumski – zabytkowa, magiczna część Wrocławia, gdzie czas się zatrzymał</h2>
+        <!-- Slider ze zdjęciami -->
+        <div class="slideshow-container">
+            <!-- Zdjęcia -->
+            <div class="mySlides3 fade">
+                <img src="images/ostrowTum/ostrowTum1.jpg" style="width:100%" alt="ostrowTum1">
+            </div>
+            <div class="mySlides3 fade">
+                <img src="images/ostrowTum/ostrowTum2.jpg" style="width:100%" alt="ostrowTum2">
+            </div>
+            <div class="mySlides3 fade">
+                <img src="images/ostrowTum/ostrowTum3.jpg" style="width:100%" alt="ostrowTum3">
+            </div>
+            <div class="mySlides3 fade">
+                <img src="images/ostrowTum/ostrowTum4.jpg" style="width:100%" alt="ostrowTum4">
+            </div>
+            <div class="mySlides3 fade">
+                <img src="images/ostrowTum/ostrowTum5.jpg" style="width:100%" alt="/ostrowTum5">
+            </div>
+            <!-- Przyciski do przewijania slidera -->
+            <a class="prev" onclick="plusSlides(-1,3)">❮</a>
+            <a class="next" onclick="plusSlides(1,3)">❯</a>
+        </div>
+        <br>
+        <!-- Tekst artykułu -->
+        <div class="article">
+            Panorama Racławicka to jedno z najważniejszych dzieł malarskich w Polsce,
+            będące zarówno arcydziełem sztuki, jak i wyjątkowym dokumentem historycznym.
+            Znajduje się we Wrocławiu, w specjalnie zaprojektowanym rotundzie,
+            gdzie od lat przyciąga tłumy turystów z kraju i zagranicy.
+            <br><br>
+            Pomysł stworzenia Panoramy Racławickiej zrodził się w 1893 roku,
+            z inicjatywy lwowskiego malarza Jana Styki. Jego celem było upamiętnienie setnej
+            rocznicy insurekcji kościuszkowskiej i bitwy pod Racławicami, która miała miejsce
+            4 kwietnia 1794 roku. Do współpracy zaprosił wybitnego malarza batalistycznego
+            Wojciecha Kossaka. Prace nad obrazem trwały od sierpnia 1893 roku do maja 1894 roku
+            i były prowadzone w specjalnie przystosowanej hali malarskiej we Lwowie.
+            <br><br>
+            Panorama Racławicka to ogromne malowidło o wymiarach 15 x 114 metrów,
+            które prezentuje panoramiczny widok bitwy pod Racławicami.
+            Dzieło jest wyjątkowe nie tylko ze względu na swoje imponujące rozmiary,
+            ale także na sposób przedstawienia wydarzeń – widz, stojąc w centrum rotundy,
+            ma wrażenie, jakby przeniósł się w czasie i przestrzeni na pole bitwy.
+            Efekt ten potęguje zastosowanie specjalnych technik malarskich oraz umieszczenie
+            przed obrazem rekwizytów, takich jak ziemia, krzaki czy armaty, które łączą się z
+            malowidłem, tworząc wrażenie trójwymiarowości.
+            <br><br>
+            Dziś Panorama Racławicka jest jedną z najważniejszych atrakcji turystycznych Wrocławia.
+            Wizyta w rotundzie to nie tylko okazja do podziwiania monumentalnego malowidła,
+            ale także możliwość zapoznania się z kontekstem historycznym i artystycznym dzieła
+            dzięki nowoczesnym prezentacjom multimedialnym i przewodnikom.
+            <br><br>
+            Panorama Racławicka we Wrocławiu to miejsce,
+            które każdy Polak powinien odwiedzić przynajmniej raz w życiu.
+            To wyjątkowe połączenie sztuki i historii, które porusza, inspiruje i
+            uczy o ważnych momentach w dziejach naszego narodu.
+        </div>
+        <br>
+        <!-- kontener do wyświetlania przycisku usuwania komentarzy -->
+        <div id="deleteButton3" style="clear: both"></div>
+        <!-- kontener do wyświetlania komentarzy -->
+        <div id="kom-container3" class="container2"></div>
+        <!-- przycisk do pokazania formuarza -->
+        <div id="form3">
+            <button type="button" id="formButton3" onclick="showForm(3)">Wstaw opinię</button>
+        </div>
+    </div>
+    <hr><!-- linia oddzielająca artykuły -->
+    <!-- Czwarty post -->
+    <div class="post-preview">
+        <h2 class="post-title">Ogród Japoński – trochę kultury i sztuki</h2>
+        <!-- Slider ze zdjęciami -->
+        <div class="slideshow-container">
+            <!-- Zdjęcia -->
+            <div class="mySlides4 fade">
+                <img src="images/ogrod/ogrod1.jpg" style="width:100%" alt="ogrod1">
+            </div>
+            <div class="mySlides4 fade">
+                <img src="images/ogrod/ogrod2.jpg" style="width:100%" alt="ogrod2">
+            </div>
+            <div class="mySlides4 fade">
+                <img src="images/ogrod/ogrod3.jpg" style="width:100%" alt="ogrod3">
+            </div>
+            <div class="mySlides4 fade">
+                <img src="images/ogrod/ogrod4.jpg" style="width:100%" alt="ogrod4">
+            </div>
+            <div class="mySlides4 fade">
+                <img src="images/ogrod/ogrod5.jpg" style="width:100%" alt="ogrod5">
+            </div>
+            <!-- Przyciski do przewijania slidera -->
+            <a class="prev" onclick="plusSlides(-1,4)">❮</a>
+            <a class="next" onclick="plusSlides(1,4)">❯</a>
+        </div>
+        <br>
+        <!-- Tekst artykułu -->
+        <div class="article">
+            Ogród Japoński we Wrocławiu to wyjątkowe miejsce na mapie miasta,
+            gdzie każdy odwiedzający może poczuć się jak w dalekiej Japonii.
+            Położony w malowniczym Parku Szczytnickim, ogród jest doskonałym
+            przykładem harmonii między naturą a ludzką ręką, oferującym
+            przestrzeń do relaksu i kontemplacji.
+            <br><br>
+            Ogród Japoński we Wrocławiu to nie tylko miejsce do spacerów,
+            ale także przestrzeń, gdzie organizowane są różnorodne wydarzenia
+            kulturalne i edukacyjne. Regularnie odbywają się tu warsztaty z kaligrafii,
+            ikebany (sztuki układania kwiatów) oraz ceremonii parzenia herbaty.
+            Takie wydarzenia pozwalają odwiedzającym zgłębić tajniki japońskiej kultury i tradycji.
+            <br><br>
+            Ogród Japoński jest otwarty dla zwiedzających od wiosny do jesieni,
+            oferując niepowtarzalne wrażenia o każdej porze roku. Wiosną można
+            podziwiać kwitnące drzewa i krzewy, latem cieszyć się bujną zielenią,
+            a jesienią zachwycać się kolorami liści. Ogród jest idealnym miejscem
+            na romantyczne spacery, rodzinne wycieczki oraz chwile spędzone na łonie natury.
+            <br><br>
+            Ogród Japoński we Wrocławiu jest symbolem przyjaźni i współpracy między
+            Polską a Japonią. Jego istnienie jest dowodem na to, że mimo odległości
+            i różnic kulturowych, można znaleźć wspólny język w miłości do natury i piękna.
+        </div>
+        <br>
+        <!-- kontener do wyświetlania przycisku usuwania komentarzy -->
+        <div id="deleteButton4" style="clear: both"></div>
+        <!-- kontener do wyświetlania komentarzy -->
+        <div id="kom-container4" class="container2"></div>
+        <!-- przycisk do pokazania formuarza -->
+        <div id="form4">
+            <button type="button" id="formButton4" onclick="showForm(4)">Wstaw opinię</button>
+        </div>
+    </div>
+    <hr><!-- linia oddzielająca artykuły -->
+    <!-- Piąty post -->
+    <div class="post-preview">
+        <h2 class="post-title">Wrocławskie Zoo-Skarb Dolnego Śląska</h2>
+        <!-- Slider ze zdjęciami -->
+        <div class="slideshow-container">
+            <!-- Zdjęcia -->
+            <div class="mySlides5 fade">
+                <img src="images/zoo/zoo1.jpg" style="width:100%" alt="zoo1">
+            </div>
+            <div class="mySlides5 fade">
+                <img src="images/zoo/zoo2.jpg" style="width:100%" alt="zoo2">
+            </div>
+            <div class="mySlides5 fade">
+                <img src="images/zoo/zoo3.jpg" style="width:100%" alt="zoo3">
+            </div>
+            <div class="mySlides5 fade">
+                <img src="images/zoo/zoo4.jpg" style="width:100%" alt="zoo4">
+            </div>
+            <div class="mySlides5 fade">
+                <img src="images/zoo/zoo5.jpg" style="width:100%" alt="zoo5">
+            </div>
+            <!-- Przyciski do przewijania slidera -->
+            <a class="prev" onclick="plusSlides(-1,5)">❮</a>
+            <a class="next" onclick="plusSlides(1,5)">❯</a>
+        </div>
+        <br>
+        <!-- Tekst artykułu -->
+        <div class="article">
+            Wrocławskie Zoo, położone na malowniczym terenie nad Odrą,
+            jest jednym z najstarszych i najpiękniejszych ogrodów zoologicznych w Polsce.
+            Od momentu otwarcia w 1865 roku, zoo nieustannie rozwija się i
+            modernizuje, oferując zwiedzającym nie tylko możliwość zobaczenia
+            egzotycznych zwierząt, ale także edukację i rozrywkę na najwyższym poziomie.
+            <br><br>
+            Wrocławskie Zoo angażuje się w liczne programy edukacyjne i ochrony
+            przyrody. Organizowane są warsztaty, wykłady oraz interaktywne
+            prezentacje dla dzieci i dorosłych. Zoo współpracuje również z
+            organizacjami międzynarodowymi w zakresie ochrony zagrożonych
+            gatunków i prowadzi programy hodowlane dla wielu rzadkich i zagrożonych zwierząt.
+            <br><br>
+            Zoo we Wrocławiu to także miejsce pełne udogodnień dla odwiedzających.
+            Na terenie zoo znajdują się liczne restauracje, kawiarnie,
+            sklepy z pamiątkami oraz place zabaw dla dzieci. Dla wygody
+            zwiedzających dostępne są również wózki dla dzieci i osób z
+            niepełnosprawnościami, a także liczne ławki i miejsca do odpoczynku.
+            <br><br>
+            Wrocławskie Zoo jest nie tylko atrakcją turystyczną, ale
+            również ważnym ośrodkiem edukacji ekologicznej i ochrony przyrody.
+            Odwiedzający mają okazję nauczyć się więcej o zagrożonych
+            gatunkach i ekologii, co zwiększa ich świadomość na temat ochrony środowiska.
+            <br><br>
+            Wrocławskie Zoo to miejsce, które oferuje niezapomniane wrażenia
+            dla całej rodziny. Jego różnorodne ekspozycje i atrakcje, połączone z
+            programami edukacyjnymi i ochrony przyrody, czynią z niego jedno z
+            najważniejszych ogrodów zoologicznych w Polsce. To miejsce, które warto
+            odwiedzić, aby zrozumieć i docenić bogactwo naszej planety i podjąć
+            działania na rzecz jej ochrony.
+        </div>
+        <br>
+        <!-- kontener do wyświetlania przycisku usuwania komentarzy -->
+        <div id="deleteButton5" style="clear: both"></div>
+        <!-- kontener do wyświetlania komentarzy -->
+        <div id="kom-container5" class="container2"></div>
+        <!-- przycisk do pokazania formuarza -->
+        <div id="form5">
+            <button type="button" id="formButton5" onclick="showForm(5)">Wstaw opinię</button>
+        </div>
+    </div>
+    <hr> <!-- linia oddzielająca artykuły -->
+</section>
+<!-- Stopka strony -->
+<footer class="container">
+    ©MK 2024
+</footer>
+</body>
+</html>

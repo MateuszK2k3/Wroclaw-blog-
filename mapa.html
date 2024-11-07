@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"> <!-- Deklaracja kodowania znaków -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ustawienie skalowania na urządzeniach mobilnych -->
+    <title>Wrocław</title> <!-- Tytuł strony -->
+    <!-- Link do głównego arkusza stylów -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weather.js"></script> <!-- Dołączenie skryptu do pobierania pogody -->
+</head>
+<body>
+<!-- Nawigacja strony -->
+<nav>
+    <div class="menu">
+        <!-- Nagłówek nawigacji -->
+        <div class="navbar-header">
+            <a class="navbar-brand">Wrocław</a> <!-- Tytuł strony w nawigacji -->
+            <div id="weather">&nbsp;</div> <!-- Wyświetlanie aktualnej pogody -->
+        </div>
+        <!-- Lista elementów nawigacyjnych -->
+        <ul class="nav">
+            <li><a href="index.html">Strona główna</a></li> <!-- Link do strony głównej -->
+            <li><a href="atraction.html">Atrakcje</a></li> <!-- Link do strony z atrakcjami -->
+            <li><a href="historia.html">Historia</a></li> <!-- Link do strony z historią -->
+            <li><a href="mapa.html">Krasnale Wrocławskie</a></li> <!-- Link do strony z mapą krasnali -->
+        </ul>
+    </div>
+</nav>
+<!-- Główny nagłówek strony -->
+<header class="masthead">
+    <div class="site-heading">
+        <!-- Wycentrowany nagłówek strony -->
+        <div class="centered" style="text-shadow: black 0.1em 0.1em 0.2em">
+            <h1>Wrocław</h1> <!-- Główny tytuł strony -->
+            <span class="subheading">Lokalizacja Krasnali Wrocławskich</span> <!-- Podtytuł -->
+        </div>
+        <img src="images/baner_dwarfs.jpg" alt="baner_mapa"> <!-- Obraz w nagłówku -->
+    </div>
+</header>
+<!-- Główna sekcja zawartości -->
+<section class="container">
+    <!-- Pierwszy post -->
+    <div class="post-preview">
+        <h2 class="post-title">Krasnale Wrocławskie</h2> <!-- Tytuł pierwszego posta -->
+        <div class="article">
+            <!-- Treść pierwszego posta -->
+            Krasnale Wrocławskie są jedną z najbardziej charakterystycznych atrakcji Wrocławia.
+            Ich historia sięga lat 80. XX wieku, kiedy to grupa artystyczna Pomarańczowa Alternatywa,
+            prowadzona przez Waldemara "Majora" Frydrycha, malowała krasnale na murach jako formę
+            protestu przeciwko reżimowi komunistycznemu.
+            <br><br>
+            Od 2001 roku krasnale zaczęły pojawiać się jako małe figurki rozproszone po
+            całym mieście, stając się symbolem Wrocławia. Każdy z nich jest unikatowy, ma
+            swoje imię i historię. Do najpopularniejszych należą Papa Krasnal na ul. Świdnickiej,
+            Życzliwek na Rynku, W-Skersi na wózkach inwalidzkich, oraz Syzyfki toczące kulę na mostku Pokutniczym.
+            <br><br>
+            Krasnale można znaleźć w różnych częściach miasta – na chodnikach, przy budynkach,
+            mostach i w parkach. Wrocław oferuje turystom mapy krasnali, a także internetową
+            Krasnalopedię, która dostarcza szczegółowych informacji o każdej figurce.
+            <br><br>
+            Te urocze postacie są nie tylko atrakcją turystyczną, ale także symbolem radości,
+            humoru i wolności. Przyciągają zarówno mieszkańców, jak i turystów, dodając miastu
+            wyjątkowego charakteru i magicznej atmosfery. Krasnale stały się integralną częścią
+            tożsamości Wrocławia, łącząc przeszłość z teraźniejszością i tworząc unikalny,
+            pełen uroku krajobraz miejski.
+        </div>
+    </div>
+    <hr>
+    <!-- Drugi post -->
+    <div class="post-preview">
+        <h2 class="post-title">Lokalizacja</h2> <!-- Tytuł drugiego posta -->
+        <div class="article">
+            <!-- Treść drugiego posta -->
+            <div class="media-container" id="dwarf-container">
+
+            </div>
+            <div id="length"></div>
+            <div class="button-container" id="buttons_kras">
+            </div>
+            <script src="js/dwarfs.js"></script> <!-- Dołączenie skryptu do obsługi krasnali -->
+        </div>
+    </div>
+    <hr>
+</section>
+<!-- Stopka strony -->
+<footer class="container">
+    ©MK 2024 <!-- Informacja o autorstwie -->
+</footer>
+</body>
+</html>
